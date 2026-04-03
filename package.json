@@ -1,0 +1,8 @@
+{
+  "name": "edu-path-monorepo",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ]
+}
