@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "college_id": 1,
+    "user": "Rahul S.",
+    "batch": "2024 Graduate",
+    "rating": 5,
+    "categories": { "academics": 5, "placement": 5, "infrastructure": 5, "campus_life": 4 },
+    "comment": "VIT has been a life-changing experience. The research facilities and industrial exposure are second to none in Tamil Nadu."
+  },
+  {
+    "id": 2,
+    "college_id": 1,
+    "user": "Ananya K.",
+    "batch": "3rd Year B.Tech",
+    "rating": 4,
+    "categories": { "academics": 4, "placement": 4, "infrastructure": 5, "campus_life": 5 },
+    "comment": "Great infrastructure and labs. Sometimes the academic pressure is high, but it prepares you well for the industry."
+  },
+  {
+    "id": 3,
+    "college_id": 2,
+    "user": "Karthik Raja",
+    "batch": "2023 Graduate",
+    "rating": 4,
+    "categories": { "academics": 4, "placement": 5, "infrastructure": 4, "campus_life": 4 },
+    "comment": "SRM's placement cell is amazing. Almost everyone in my batch got placed in top MNCs."
+  }
+]

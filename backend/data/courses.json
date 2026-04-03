@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "location": "Chennai | NAAC A++ Grade",
+    "name": "VIT University",
+    "programs": "B.Tech, MBA, M.Tech",
+    "status": "Admissions Open",
+    "description": "Known as a hub of academic excellence with state-of-the-art facilities and a stellar placement record. Get guaranteed admission support."
+  },
+  {
+    "id": 2,
+    "location": "Chennai | NAAC A++ Grade",
+    "name": "SRM Institute of Science and Technology",
+    "programs": "Engineering, Medicine, Management",
+    "status": "Admissions Open",
+    "description": "One of India's top-ranking universities offering diverse specializations and unparalleled opportunities for research and global internships."
+  },
+  {
+    "id": 3,
+    "location": "Kanchipuram | Premier Institute",
+    "name": "Saveetha University",
+    "programs": "Engineering, Dental, Law",
+    "status": "Limited Seats",
+    "description": "A powerhouse of academic rigor recognized for holistic development, strong industry connections, and an amazing campus life."
+  },
+  {
+    "id": 4,
+    "location": "Villupuram | Emerging Hub",
+    "name": "Takshashila University",
+    "programs": "B.E, B.Sc, B.Com",
+    "status": "Admissions Open",
+    "description": "Modern infrastructure with a strong focus on practical learning, preparing students for tomorrow's technology-driven world."
+  }
+]

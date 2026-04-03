@@ -1,0 +1,14 @@
+{
+  "process": [
+    { "step": 1, "title": "Initial Consultation", "description": "Meet with our experts to discuss your academic goals and career aspirations." },
+    { "step": 2, "title": "Profile Evaluation", "description": "We analyze your academic scores and recommend the best colleges that match your profile." },
+    { "step": 3, "title": "Application & Documentation", "description": "We handle the entire application process and ensure your documents are perfectly organized." },
+    { "step": 4, "title": "Guaranteed Admission", "description": "Get your admission confirmed in leading Tamil Nadu institutions without any hassle." }
+  ],
+  "importantDates": [
+    { "event": "Engineering Counseling Starts", "date": "15th June 2026" },
+    { "event": "Medical Counseling Starts", "date": "10th July 2026" },
+    { "event": "Management Quota Deadlines", "date": "1st August 2026" }
+  ],
+  "eligibilityGeneral": "We secure admissions through both regular counseling and management quotas. Whether you are a top scorer or seeking a specific course, we have direct tie-ups with 50+ universities to guarantee your placement."
+}

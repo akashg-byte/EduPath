@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "VIT University",
+    "course": "CSE",
+    "cutoff": 190,
+    "fees": 195000,
+    "location": "Vellore",
+    "salary_avg": "12 LPA",
+    "salary_max": "45 LPA"
+  },
+  {
+    "id": 2,
+    "name": "SRM Institute of Science and Technology",
+    "course": "CSE",
+    "cutoff": 185,
+    "fees": 250000,
+    "location": "Chennai",
+    "salary_avg": "10 LPA",
+    "salary_max": "35 LPA"
+  },
+  {
+    "id": 3,
+    "name": "Saveetha Engineering College",
+    "course": "IT",
+    "cutoff": 175,
+    "fees": 120000,
+    "location": "Chennai",
+    "salary_avg": "6.5 LPA",
+    "salary_max": "18 LPA"
+  },
+  {
+    "id": 4,
+    "name": "SSN College of Engineering",
+    "course": "CSE",
+    "cutoff": 195,
+    "fees": 150000,
+    "location": "Chennai",
+    "salary_avg": "13 LPA",
+    "salary_max": "50 LPA"
+  },
+  {
+    "id": 5,
+    "name": "Madras Medical College",
+    "course": "MBBS",
+    "cutoff": 198,
+    "fees": 50000,
+    "location": "Chennai",
+    "salary_avg": "15 LPA",
+    "salary_max": "60 LPA"
+  },
+  {
+    "id": 6,
+    "name": "PSG College of Technology",
+    "course": "Mechanical",
+    "cutoff": 192,
+    "fees": 110000,
+    "location": "Coimbatore",
+    "salary_avg": "8 LPA",
+    "salary_max": "22 LPA"
+  },
+  {
+    "id": 7,
+    "name": "Loyola College",
+    "course": "Business Administration",
+    "cutoff": 180,
+    "fees": 90000,
+    "location": "Chennai",
+    "salary_avg": "7 LPA",
+    "salary_max": "25 LPA"
+  }
+]

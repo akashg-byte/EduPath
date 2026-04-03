@@ -1,0 +1,98 @@
+[
+  {
+    "college_id": 1,
+    "college_name": "VIT University",
+    "cutoffs": [
+      {
+        "branch": "Computer Science Engineering",
+        "2023": 196.5,
+        "2024": 197.0,
+        "2025": 198.0
+      },
+      {
+        "branch": "Electronics and Communication Engineering",
+        "2023": 194.0,
+        "2024": 195.0,
+        "2025": 196.5
+      },
+      {
+        "branch": "Information Technology",
+        "2023": 195.0,
+        "2024": 196.0,
+        "2025": 197.5
+      }
+    ]
+  },
+  {
+    "college_id": 2,
+    "college_name": "SRM Institute of Science and Technology",
+    "cutoffs": [
+      {
+        "branch": "Computer Science Engineering",
+        "2023": 192.5,
+        "2024": 193.5,
+        "2025": 194.5
+      },
+      {
+        "branch": "Electronics and Communication Engineering",
+        "2023": 190.0,
+        "2024": 191.0,
+        "2025": 192.5
+      },
+      {
+        "branch": "Mechanical Engineering",
+        "2023": 185.0,
+        "2024": 186.0,
+        "2025": 187.0
+      }
+    ]
+  },
+  {
+    "college_id": 3,
+    "college_name": "Saveetha University",
+    "cutoffs": [
+      {
+        "branch": "Computer Science Engineering",
+        "2023": 188.0,
+        "2024": 189.0,
+        "2025": 190.0
+      },
+      {
+        "branch": "Dental Surgery",
+        "2023": 185.0,
+        "2024": 186.0,
+        "2025": 187.5
+      },
+      {
+        "branch": "Law (LLB)",
+        "2023": 180.0,
+        "2024": 182.0,
+        "2025": 184.0
+      }
+    ]
+  },
+  {
+    "college_id": 4,
+    "college_name": "Takshashila University",
+    "cutoffs": [
+      {
+        "branch": "Computer Science Engineering",
+        "2023": 180.0,
+        "2024": 182.0,
+        "2025": 184.5
+      },
+      {
+        "branch": "Civil Engineering",
+        "2023": 170.0,
+        "2024": 172.0,
+        "2025": 174.0
+      },
+      {
+        "branch": "B.Com",
+        "2023": 165.0,
+        "2024": 168.0,
+        "2025": 170.0
+      }
+    ]
+  }
+]
