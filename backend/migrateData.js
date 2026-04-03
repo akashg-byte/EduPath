@@ -25,7 +25,7 @@ const migrateData = async () => {
         name: college.name,
         location: college.location,
         type: college.type,
-        description: college.description,
+        description: college.description,    
         programs: college.programs,
         status: college.status,
         cutoff: parseFloat(college.cutoff) || 0,
