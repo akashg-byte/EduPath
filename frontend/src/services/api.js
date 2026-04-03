@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE = '/_/backend/api';
+const API_BASE = '/api';
 
 export const getCourses = async () => {
   const response = await axios.get(`${API_BASE}/courses`);

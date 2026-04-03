@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
+const serverless = require('serverless-http'); // Import serverless-http
 const { calculateCareerScores, getTopCareers } = require('./utils/careerLogic');
 require('dotenv').config();
 
@@ -17,6 +18,11 @@ const readData = (filename) => {
   const filePath = path.join(__dirname, 'data', filename);
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
 };
+
+// Sample API route
+app.get('/api/hello', (req, res) => {
+  res.json({ message: 'Hello from the Serverless Backend!' });
+});
 
 // API Routes
 app.get('/api/courses', (req, res) => {
@@ -95,9 +101,6 @@ app.post('/api/predict-colleges', (req, res) => {
 
     counselingData.forEach(college => {
       const eligibleBranches = college.cutoffs.filter(branchInfo => {
-        // Checking against the latest year (2025) or if it's within a reasonable range
-        // For prediction, we consider it a match if user cutoff is >= any of the last 3 years
-        // But more accurately, >= the maximum of the last 3 years is "Safe", >= minimum is "Possible"
         const maxCutoff = Math.max(branchInfo['2023'], branchInfo['2024'], branchInfo['2025']);
         return userCutoff >= (maxCutoff - 2); // Showing colleges within 2 marks range
       });
@@ -140,7 +143,6 @@ app.post('/api/analyze-career', (req, res) => {
     // Filter colleges based on recommended careers and user constraints
     const recommendations = careers.map(career => {
       const matchingColleges = allColleges.filter(c => {
-        // Simple mapping: CSE -> Engineering, IT -> Engineering, MBBS -> Medical, etc.
         const courseMap = {
           cse: ['CSE', 'IT'],
           medical: ['MBBS', 'Dental'],
@@ -178,7 +180,13 @@ app.get('/', (req, res) => {
   res.send('College Admission API is running...');
 });
 
-// Start Server
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
+// For local development
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+  });
+}
+
+// Export for Vercel
+module.exports = app;
+module.exports.handler = serverless(app);

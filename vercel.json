@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "experimentalServices": {
+    "frontend": {
+      "framework": "vite",
+      "entrypoint": "frontend"
+    },
+    "backend": {
+      "framework": "nodejs",
+      "entrypoint": "backend/server.js"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ]
+}
