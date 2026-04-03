@@ -59,7 +59,6 @@ export const getContacts = async () => {
 
 export const getDashboardStats = async () => {
   try {
-     // If backend had an endpoint, we'd use it. For now, keeping fallback or using what's available.
      const [profiles, contacts, colleges] = await Promise.all([
         supabase.from('profiles').select('*', { count: 'exact', head: true }),
         supabase.from('contacts').select('*', { count: 'exact', head: true }),
@@ -74,4 +73,34 @@ export const getDashboardStats = async () => {
       console.error('Stats error:', err);
       return { students: 0, enquiries: 0, colleges: 0 };
   }
+};
+
+export const seedDatabase = async () => {
+  const sampleColleges = [
+    { name: 'VIT University', location: 'Vellore', type: 'Private', programs: ['B.Tech', 'M.Tech'], status: 'Active', cutoff: 195.5, fees: 200000 },
+    { name: 'SRM Institute', location: 'Chennai', type: 'Private', programs: ['B.Tech', 'B.Arch'], status: 'Active', cutoff: 188.0, fees: 250000 },
+    { name: 'Anna University', location: 'Chennai', type: 'Government', programs: ['B.E', 'B.Tech'], status: 'Active', cutoff: 199.0, fees: 50000 }
+  ];
+
+  const { error } = await supabase.from('colleges').insert(sampleColleges);
+  if (error) throw error;
+  return { message: 'Sample data seeded successfully!' };
+};
+
+export const addCollege = async (collegeData) => {
+  const { data, error } = await supabase.from('colleges').insert([collegeData]);
+  if (error) throw error;
+  return data;
+};
+
+export const updateCollege = async (id, collegeData) => {
+  const { data, error } = await supabase.from('colleges').update(collegeData).eq('id', id);
+  if (error) throw error;
+  return data;
+};
+
+export const deleteCollege = async (id) => {
+  const { data, error } = await supabase.from('colleges').delete().eq('id', id);
+  if (error) throw error;
+  return data;
 };
